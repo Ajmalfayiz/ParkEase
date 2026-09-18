@@ -48,7 +48,7 @@ function LoginPage() {
         })
       );
 
-      navigate("/");
+      navigate("/", { replace: true });
 
     } catch (error) {
       dispatch(

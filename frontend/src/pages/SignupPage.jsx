@@ -36,7 +36,7 @@ function Register() {
       setMessage(response.data.message);
 
       setTimeout(() => {
-        navigate("/login");
+        navigate("/", { replace: true });
       }, 1000);
 
     } catch (error) {
