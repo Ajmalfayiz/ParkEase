@@ -278,11 +278,11 @@ const ParkingSpotDirectory = () => {
                                                     </div>
                                                 </div>
 
-                                                <div className="hidden lg:flex items-center gap-5">
+                                                <div className="flex items-center gap-5">
                                                     <Link
                                                         to={`/details/${lot.id}`}
                                                         state={{ spot: lot }}
-                                                        className="btn-1 text-white px-7 py-3 rounded-full shadow-md text-sm"
+                                                        className="btn-1 text-white px-5 py-2.5 sm:px-7 sm:py-3 rounded-full shadow-md text-xs sm:text-sm whitespace-nowrap"
                                                     >
                                                         View
                                                     </Link>

@@ -189,10 +189,11 @@ const ParkingLotDetailsPage = () => {
           <div className="flex items-center gap-3">
             <Link
               to="/listing"
-              className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition"
+              className="inline-flex items-center gap-1.5 rounded-lg bg-slate-800 px-2.5 py-2 text-xs font-semibold text-slate-300 transition hover:bg-slate-700 sm:px-3"
               title="Back to search results"
             >
               <ArrowLeft className="w-4 h-4" />
+              <span>View listing</span>
             </Link>
             <div>
               <span className="text-xs text-slate-400">Viewing Facility</span>
@@ -451,18 +452,7 @@ const ParkingLotDetailsPage = () => {
                   </select>
                 </div>
 
-                <div>
-                  <label className="block text-xs font-medium text-slate-400 mb-2">Vehicle</label>
-                  <select
-                    value={vehicleSize}
-                    onChange={(e) => setVehicleSize(e.target.value)}
-                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2.5 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  >
-                    <option value="standard">Standard car</option>
-                    <option value="suv">SUV / large vehicle</option>
-                    <option value="van">Van / truck</option>
-                  </select>
-                </div>
+                
 
                 {lot.hasEv && (
                   <label className="flex items-center justify-between rounded-xl border border-slate-700 bg-slate-950 px-3 py-2.5 text-sm text-slate-200">
