@@ -20,7 +20,6 @@ ParkEase is a modern, responsive parking lot finder web application designed to 
 | **Backend API** | Render | `https://<your-render-service-name>.onrender.com` |
 
 ---
-# ParkEase 🚗🅿️
 
 ParkEase is a modern, responsive parking lot finder web application designed to help drivers locate, view, and reserve available parking spots in real time. Featuring live geolocation detection, interactive spot listings, and a seamless booking flow, ParkEase removes the hassle of finding parking in busy areas.
 
