@@ -39,6 +39,7 @@ const App = () => {
           <Route path='/listing' element={<ProtectedRoute><ListingPage /></ProtectedRoute>} />
           <Route path='/details/:lotId?' element={<ProtectedRoute><DetailsPage /></ProtectedRoute>} />
           <Route path='/admin' element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
+          <Route path='*' element={<Navigate to='/' replace />} />
         </Route>
       </Routes>
     </BrowserRouter>
